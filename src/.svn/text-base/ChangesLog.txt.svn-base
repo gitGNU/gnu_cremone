@@ -1,0 +1,54 @@
+The Changelog is no longer maintained, project evolve quickly and maintain it is boring.
+
+08 octobre 2011
+Added	separate singleton class to manage themes'files tokens13 octobre 2011
+   released version 0.0.1 of cremone
+
+     Change log:
+        -Added: window hierarchy implemented
+        -Updated: change all std::tr1:: with std::
+        -Added: method to load a text file which contains theme's ressources file's name
+        -Added: inline documentation
+        -Updated: constness of methods
+        -Updated: indicate methods that throw nothing (hope there were not many mistakes)
+        -Removed: useless attributes and methods of theme
+
+07 octobre 2011
+   released version 0.0.4 of cremone
+
+     Change log:
+        -Removed: removed one of the two versions of __btimap::draw() and __bitmap::copy() and make their aguments optional
+        -Fixed: __screen no longer use a dumb pointer, but a shared_ptr. Maybe I should try to use unique_ptr.
+        -Updated: All draw() methods now need a weak_ptr<className>, not __bitmap or __screen.
+        -Added: object __image<className,object>::getBitmap()
+        -Fixed: __window class seem to work perfectly
+		-Fixed: event system now work correctly
+
+21 septembre 2011
+   released version 0.0.2 of cremone
+
+     Change log:
+        -Added: copyScreen method
+        -Updated: drawScreen now use the new blitSurface
+        -Updated: blitSurface now have 6 arguments. See implementation changelog for further details
+        -Updated: method which use surface only take unsigned int
+        -Added: save method to allow saving a bitmap on disk (see implementation's changelog for furtther details)
+	-Updated: redo the test in sprite::draw() to avoid creating new shadow each time we show the sprite
+	-Updated: private/protected/public attributes are redo. (they were removed for tests purpose and I forgot to undo the change)
+	-Removed: "*free" mecanism. Now, it is the implementation's job. I would like to know how to put it into generic classes, but while I don't know: KISSS.
+
+12 septembre 2011
+   released version 0.0.2 of cremone
+
+     Change log:
+        -Removed: exception if loadFile can't load the image (to avoid double check with the return bool)
+
+11 septembre 2011
+   released version 0.0.1 of cremone
+
+     Change log:
+        -Added: __bitmap now take the _Cn template parameter too
+        -Added: added a __bitmap::setBitmap method to manage the destructor method for the shared_ptr<_Tp> __bitmap::m_surface
+        -Added: added a __screen::setScreen method to manage the destructor method for the shared_ptr<_Tp> __screen::m_screen
+        -Updated: Improve naming consistency (create, iCreate and iLoadFile are renamed to create)
+	

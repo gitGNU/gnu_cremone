@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="cremone">
+		<Project filename="implementation/sdl/implementation.cbp">
+			<Depends filename="src/cremone.cbp" />
+		</Project>
+		<Project filename="src/cremone.cbp" />
+		<Project filename="tests/src/tests.cbp" />
+		<Project filename="implementation/sfml/implementation.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

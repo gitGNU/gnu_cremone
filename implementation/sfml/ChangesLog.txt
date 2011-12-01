@@ -1,0 +1,15 @@
+21 septembre 2011
+   released version 0.0.4 of sdl_implementation
+
+     Change log:
+        -Added: method to save an image into a file. It currently save some data into a file named as same with an added ".txt" extension, for logging purpose. (to be sure that BPP won't be the cause of a bug)
+        -Updated: blitSurface now take 6 arguments and have been fixed. It now allow to specify which area of the source (x,y,w,h) will be copied at the given point of destination (dx,dy)
+	-Updated: methods using surfaces now only take unsigned arguments.
+	-Removed: no longer "*free" method. The create method manage it, by using SDL_FreeSurface(*) in the pointer's construction.
+
+12 septembre 2011
+   released version 0.0.2 of sdl_implementation
+
+     Change log:
+        -Fixed: #18643 	'Blit combination not supported' with sprite.draw()
+

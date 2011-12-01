@@ -1,0 +1,8 @@
+bottom=bottom.bmp
+bottomleft=bottomleft.bmp
+bottomright=bottomright.bmp
+left=left.bmp
+right=right.bmp
+top=top.bmp
+topleft=topleft.bmp
+topright=topright.bmp
